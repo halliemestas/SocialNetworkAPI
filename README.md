@@ -38,7 +38,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 ## Walkthrough Video
 
-Coming soon!
+https://drive.google.com/file/d/1k97rZ1cRWULzc5PfkWoRS7xRImtm6Z-l/view
 
 ## Live link?
 
