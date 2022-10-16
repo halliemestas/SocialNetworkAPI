@@ -8,10 +8,10 @@ const thoughtController = {
         path: "reactions",
         select: "-__v",
       })
-      .populate({
-        path: "thoughts",
-        select: "-__v",
-      })
+      // .populate({
+      //   path: "thoughts",
+      //   select: "-__v",
+      // })
       .select("-__v")
       .then((dbThoughtData) => res.json(dbThoughtData))
       .catch((err) => {
@@ -41,7 +41,7 @@ const thoughtController = {
     Thought.create(body)
       .then((thoughtData) => {
         return User.findOneAndUpdate(
-          { _id: body.userId },
+          { username: body.username },
           { $push: { thoughts: thoughtData._id } },
           { new: true }
         );
@@ -100,7 +100,7 @@ const thoughtController = {
   deleteReaction({ params }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
-      { $pull: { reactions: { reactionId: params.reactionId } } },
+      { $pull: { reactions: { _id: params.reactionId } } },
       { new: true }
     )
       .then((dbThoughtData) => res.json(dbThoughtData))

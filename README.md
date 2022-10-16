@@ -1,20 +1,10 @@
 # Social Network API
 
-Your Challenge is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages, you may also optionally use a JavaScript date library of your choice or the native JavaScript `Date` object to format timestamps.
+## Description and Requirements
 
-No seed data is provided, so you’ll need to create your own data using Insomnia after you’ve created your API.
+This week's challenge was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. The application uses Express.js for routing, a MongoDB database, and the Mongoose ODM. 
 
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
-
-## User Story
-
-```md
-
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
-
-```
+No seed data is provided, so you’ll need to create your own data using Insomnia after you’ve cloned the API.
 
 ## Acceptance Criteria
 
@@ -35,3 +25,21 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 ```
+
+## User Story
+
+```md
+
+AS A social media startup
+I WANT an API for my social network that uses a NoSQL database
+SO THAT my website can handle large amounts of unstructured data
+
+```
+
+## Walkthrough Video
+
+Coming soon!
+
+## Live link?
+
+Because this application isn't deployed, the walkthrough video demonstrates its functionality.
